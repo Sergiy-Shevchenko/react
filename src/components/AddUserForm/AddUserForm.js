@@ -14,7 +14,7 @@ handleChange = ({target: {value, name}}) => {
 
 handleSubmit = (event) => {
     event.preventDefault();
-    this.props.AddUserForm(
+    this.props.addUser(
         {...this.state}
     )
     this.setState({
