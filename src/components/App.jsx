@@ -12,9 +12,9 @@ class App extends Component   {
   };
 
 
-  // deleteUser = userId => {
-  //   this.setState(prevState => 
-  //     ({users: prevState.users.filter(({id}) => id !== userId),}))};
+  deleteUser = userId => {
+    this.setState(prevState => 
+      ({users: prevState.users.filter(({id}) => id !== userId),}))};
 
   addUser = (userData) => {
     const newUser = {
@@ -28,7 +28,7 @@ class App extends Component   {
     const {users} = this.state
   return (
    <div>
-    {/* < Userlist users={users} deleteUser={this.deleteUser}/> */}
+    < Userlist users={users} deleteUser={this.deleteUser}/>
     < AddUserForm addUser={this.addUser}/>
    </div>
   );
