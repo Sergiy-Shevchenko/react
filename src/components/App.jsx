@@ -29,7 +29,7 @@ class App extends Component   {
   return (
    <div>
     < Userlist users={users} deleteUser={this.deleteUser}/>
-    < AddUserForm addUser={this.addUser}/>
+    < AddUserForm addUserProp={this.addUser}/>
    </div>
   );
 };
